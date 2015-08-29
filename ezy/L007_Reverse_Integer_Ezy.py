@@ -27,11 +27,11 @@ class L007_Reverse_Integer_Ezy:
     def reverse(self, x):
         ret, i, s = 0, abs(x), -1 if x < 0 else 1
         while i:
-            i, ret = i//10, ret * 10+ i%10
+            i, ret = i // 10, ret * 10 + i % 10
         return 0 if ret > pow(2, 31) else ret * s
     
     
-if __name__=="__main__":
+if __name__ == "__main__":
     o = L007_Reverse_Integer_Ezy()
     print o.reverse(234)
     

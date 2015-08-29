@@ -5,11 +5,11 @@ class L014_Longest_Common_Prefix_Ezy:
     # @param {string[]} strs
     # @return {string}
     def longestCommonPrefix(self, strs):
-        if len(strs)==0:
+        if len(strs) == 0:
             return ''
             
         # append to mys chars from the first string that are common
-        mys=''
+        mys = ''
         for i in range(len(strs[0])):
             for j in range(len(strs)):
                 if len(strs[j]) <= i or strs[j][i] != strs[0][i]:

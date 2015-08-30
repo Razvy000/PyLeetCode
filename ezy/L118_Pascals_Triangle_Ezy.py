@@ -21,7 +21,7 @@ class L118_Pascals_Triangle_Ezy:
     def generate(self, numRows):
         r = []
         l = [1]
-        for i in range(0, numRows):
+        for _ in range(0, numRows):
             # create l2 based on l
             l2 = [1]
             for j in range(len(l) - 1):

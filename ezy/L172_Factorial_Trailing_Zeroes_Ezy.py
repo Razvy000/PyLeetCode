@@ -21,4 +21,4 @@ class L172_Factorial_Trailing_Zeroes_Ezy:
         return r
         
     def trailingZeroes(self, n):
-        return 0 if n < 5 else n/5 + self.trailingZeroes(n/5)
+        return 0 if n < 5 else n / 5 + self.trailingZeroes(n / 5)
